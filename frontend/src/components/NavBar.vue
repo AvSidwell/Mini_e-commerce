@@ -2,7 +2,7 @@
     
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">SIDWELLO</a>
+    <a class="navbar-brand" href="/">SIDWELLO</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,9 +16,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact">Contact</a>
         </li>
       </ul>
       <span class="navbar-items">
@@ -42,7 +39,6 @@ export default {
     .navbar {
       background-color:black!important;
       color: white !important;
-      box-shadow: 0px 6px 5px 0px whitesmoke;
       height: 100px;
       display: flex;
       justify-content: space-between;
@@ -72,15 +68,13 @@ export default {
     }
     .nav-item :hover{
       background-color: rgb(204, 186, 202);
-      border: 4px solid;
+      border: 2px dotted;
+      border-radius: 10px;
     }
 
     .navbar-items{
       text-align: center;
       color:white;
-      background-color: rgb(146, 50, 109);
-      border-radius: 6px;
-      width: 58px;
       height: 30px;
       display: flex;
       justify-content: space-between;

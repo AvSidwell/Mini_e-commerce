@@ -1,61 +1,54 @@
 <template>
-
-   <section class="container forms ">
+   <section class="container forms p-auto">
            
             <!-- Signup Form -->
-             <div class="form signup">
-                <div class="form-content">
+             <div class="form signup m-auto">
+                <div class="form-content  align-items-center">
                     <h4>Signup</h4>
-                    <form action="#">
-                        <div class="field input-field">
+                    <form action="#" class="p-auto">
+                        <div class="field input-field m-auto mb-3">
                             <input type="text" placeholder="Full Name" class="input">
                         </div>
-                        <div class="field input-field">
+                        <div class="field input-field m-auto mb-3">
                             <input type="email" placeholder="Email" class="input">
                         </div>
-                        <div class="field input-field">
+                        <div class="field input-field m-auto mb-3">
                             <input type="password" placeholder="Create password" class="password">
                         </div>
-                        <div class="field input-field">
+                        <div class="field input-field m-auto mb-3">
                             <input type="password" placeholder="Confirm password" class="password">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
-                        <div class="field button-field">
+                        <div class="field button-field m-auto">
                             <button>Signup</button>
                         </div>
                     </form>
                     
                     <div class="form-link">
-                        <span>You have an account <a href="#" class="link login-link">Login in</a></span>
+                        <span>You have an account <a href="Login" class="link login-link">Login in</a></span>
                     </div>
                 </div>
             </div>
         </section>     
+        
     
 </template>
 <script>
+
 export default {
     
 }
 </script>
 <style scoped>
+form-action{
+    display: flex;
+    justify-content: center;
+}
 
-.form.signup{
-    opacity: 0;
-    pointer-events: none;
-}
-.forms.show-signup .form.signup{
-    opacity: 1;
-    pointer-events: auto;
-}
-.forms.show-signup .form.login{
-    opacity: 0;
-    pointer-events: none;
-}
 h4{
     font-size: 1.75rem;
     font-weight: 600;
-    color: #2e56c3;
+    color: #92129e;
     text-align: center;
 }
 form{
@@ -64,7 +57,7 @@ form{
 .form .field{
     position: relative;
     height: 3.125rem;
-    width: 100%;
+    width: 30%;
     margin-top: 1.25rem;
     border-radius: 0.375rem;
 }
@@ -72,7 +65,7 @@ form{
 .field button{
     height: 100%;
     width: 100%;
-    border: none;
+    border: 4px solid;
     font-size: 1rem;
     font-weight: 400;
     border-radius: 0.375rem;
@@ -97,12 +90,12 @@ form{
 }
 .field button{
     color: #fff;
-    background-color: #073156;
+    background-color: #cc69d2;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 .field button:hover{
-    background-color: #016dcb;
+    background-color: #ce36ad96;
 }
 .form-link{
     text-align: center;

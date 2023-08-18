@@ -67,7 +67,7 @@ export default {
 
 .follow{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     margin-top: 40px;
     color: ghostwhite;
 }
@@ -99,8 +99,9 @@ export default {
     color: whitesmoke;
 }
 
-.fab fa-youtube{
-    width: 80px;
+.icon{
+    display: flex;
+    justify-items: center;
 }
 
 
