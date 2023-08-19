@@ -6,7 +6,7 @@
             </div>
         <div class="contact">
             <h4>Contact</h4>
-            <p><strong>Address:</strong>Anywhere in Cape Town</p><br>
+            <p><strong>Address:</strong>Anywhere in <br>Cape Town</p><br>
             <p><strong>Phone:</strong> 021 222 333 4</p>
         </div>
         <div class="hours">
@@ -45,6 +45,7 @@ export default {
 <style scoped>
     footer{
     background-color: black;
+    overflow: hidden;
 }
 
 .logo {
@@ -81,7 +82,7 @@ export default {
 .contact{
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 20px;
+    margin-right: 20px;
     color: whitesmoke;
 }
 
@@ -97,6 +98,7 @@ export default {
 .hours{
     margin-top: 40px;
     color: whitesmoke;
+    
 }
 
 .icon{
@@ -104,6 +106,38 @@ export default {
     justify-items: center;
 }
 
+@media screen and (max-width: 700px) {
+  .col {
+    flex-direction: column;
+  }
 
+  .follow {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .contact {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .copyright {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .hours {
+    display: none;
+    /* margin-top: 0;
+    margin-left: 50px; */
+  }
+  .copyright{
+    margin-right: 70px;
+  }
+  .logo{
+    font-size: 35px;
+   
+  }
+}
     
 </style>

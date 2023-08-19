@@ -86,5 +86,44 @@ button{
 button:hover{
     background-color: blueviolet;
 }
+
+@media only screen and (max-width: 700px) {
+   .container {
+        background-size: cover;
+        overflow: hidden; 
+    }
+
+    .form {
+        padding: 1rem; 
+    }
+
+    .input,
+    .password {
+        height: 2.5rem;
+        width: 15rem; 
+    }
+
+    .forgot-pass {
+        margin-top: 5px; 
+        /* margin-right: 4px; */
+    }
+
+    span {
+        margin-left: 0; 
+        display: block; 
+
+    }
+
+    button {
+        height: 2rem; 
+        width: 8rem;
+        margin-top: 5px; 
+        margin-right: 50px;
+    }
+    h4{
+        font-size: 40px;
+    }
+
+}
     
 </style>

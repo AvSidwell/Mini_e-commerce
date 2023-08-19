@@ -23,6 +23,7 @@
 </div>
 </section>
  <section class="Featured">
+
       <h2>Featured Products</h2>
 
          <div class="first-container">
@@ -107,12 +108,32 @@ h4{
 .prod-img{
     width: 100%; 
     height: 100vh;
-    /* border-radius: 20px; */
-    box-shadow: 5px 5px 6px 6px white;
+    
 }
 .prod{
     width: 250px; 
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+   
+   *{
+    overflow: hidden;
+   }
+   .prod-img{
+    height: 50vh;
+   }
+   .first-container{
+    display: flex;
+    flex-direction: column;
+   
+   }
+   h2, h3{
+    font-size: 25px;
+   }
+   h4{
+    font-size: 20px;
+   }
 }
 
   
